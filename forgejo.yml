@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  forgejo:
+    image: codeberg.org/forgejo/forgejo:11
+    container_name: forgejo
+    restart: always
+    ports:
+      - "3000:3000"
+    volumes:
+      - forgejo_data:/data
+
+volumes:
+  forgejo_data:

@@ -1,0 +1,6 @@
+version: '3'
+
+services:
+  harbor:
+    image: goharbor/harbor-core:v2.13.0
+    restart: unless-stopped
